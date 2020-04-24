@@ -1,3 +1,120 @@
 body {
-  background-color: lightblue;
+  padding: 0px 30px;
+  margin: 0;
+  background-color: #e9e9e9;
+  font-family: "Avenir", sans-serif;
+  color: #333;
+}
+
+header {
+  padding-top: 12px;
+  text-align: center;
+  color: #c561ff;
+  font-size: 1.3em;
+}
+
+header::first-letter {
+  color: #ff7142;
+}
+
+header span {
+  color: #02e3c1;
+}
+
+.categories {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-dog {
+  list-style: none;
+  padding: 10px 20px;
+  margin: 15px;
+  background-color: #ff7142;
+  border: solid .5px #db6036;
+  border-radius: .4em;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.nav-dog:hover {
+  background-color: #db6036;
+  cursor: pointer;
+}
+
+.nav-cat {
+  list-style: none;
+  padding: 10px 20px;
+  margin: 15px;
+  background-color: #02e3c1;
+  border: solid .5px #00ac92;
+  border-radius: .4em;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.nav-cat:hover {
+  background-color: #00ac92;
+  cursor: pointer;
+}
+
+.nav-dino {
+  list-style: none;
+  padding: 10px 20px;
+  margin: 15px;
+  background-color: #c561ff;
+  border: solid .5px #9b4bc9;
+  border-radius: .4em;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.nav-dino:hover {
+  background-color: #9b4bc9;
+  cursor: pointer;
+}
+
+#pets {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 15px 0px;
+}
+
+#pets .container {
+  width: 400px;
+  background-color: #e9e9e9;
+  margin: 35px 15px;
+  text-align: center;
+  border: solid 4px #d3d3d3;
+  border-radius: .3em;
+}
+
+#pets h2 {
+  background-color: #d3d3d3;
+  margin: 0px 0px 20px 0px;
+  padding: 10px 0px;
+}
+
+#pets h3 {
+  margin: 20px 0px 0px 0px;
+  padding: 10px 0px;
+}
+
+#pets img {
+  width: 300px;
+  border: solid 2px #b3b3b3;
+  padding: 15px;
+  border-radius: .3em;
+}
+
+.image-center {
+  display: flex;
+  justify-content: center;
 }
