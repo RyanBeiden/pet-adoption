@@ -130,7 +130,7 @@ const pets = [
     color: "Blue",
     specialSkill: "Listens attentively to boring stories.",
     type: "dog",
-    imageUrl: "http://dailynewsdig.com/wp-content/uploads/2014/03/Creative-And-Funny-Dog-Stock-Photography-Pictures-2.jpg"
+    imageUrl: "https://bit.ly/353hRgv"
   },
   {
     name: "Spooky",
@@ -144,14 +144,14 @@ const pets = [
     color: "Red",
     specialSkill: "Owns a Nintendo Power Glove.",
     type: "dino",
-    imageUrl: "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/2/12/enhanced/webdr15/anigif_enhanced-29802-1446485228-10.gif?crop=250:165;0,0&downsize=715"
+    imageUrl: "https://bit.ly/3bBOWCF"
   },
   {
     name: "Snuggles",
     color: "Orange",
     specialSkill: "Is comfortable with jokes about his receding hairline.",
     type: "cat",
-    imageUrl: "http://funnyanimalphoto.com/wp-content/uploads/2013/08/cat_caught_mouse_thegatewaypundit.jpg"
+    imageUrl: "https://bit.ly/3aCsQyS"
   },
   {
     name: "Buddy",
@@ -172,7 +172,7 @@ const pets = [
     color: "Red",
     specialSkill: "Knows the words to 4 rap songs.",
     type: "cat",
-    imageUrl: "http://funbk.s3.amazonaws.com/wp-content/uploads/2016/06/funny-cat-video-which-will-make-you-laugh-louder.jpg"
+    imageUrl: "https://bit.ly/2yK68rq"
   },
   {
     name: "Bubba",
@@ -207,7 +207,7 @@ const pets = [
     color: "Red",
     specialSkill: "Doesn’t get weirded out by the word “moist.”",
     type: "dino",
-    imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
+    imageUrl: "https://bit.ly/2KvKjyh"
   }
 ];
  
