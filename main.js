@@ -11,7 +11,7 @@ const pets = [
     color: "Poop-Colored",
     specialSkill: "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
     type: "dino",
-    imageUrl: "http://www.jozilife.co.za/wp-content/uploads/The-Dino-Expo.jpg"
+    imageUrl: "https://bit.ly/3aBQU4M"
   },
   {
     name: "Whiskers",
@@ -227,21 +227,21 @@ const allPets = (arr) => {
     domString += `<h4>${arr[i].color}</h4>`;
     domString += `<p>${arr[i].specialSkill}</p>`;
     if (arr[i].type === 'dog') {
-      domString += `<h3 style="background-color: #ff7142;">${arr[i].type}</h3>`;
+      domString += `<h3 style="background-color: #ff7142;">${arr[i].type.charAt(0).toUpperCase() + arr[i].type.slice(1)}</h3>`;
     } else if (arr[i].type === 'dino') {
-      domString += `<h3 style="background-color: #c561ff;">${arr[i].type}</h3>`;
+      domString += `<h3 style="background-color: #c561ff;">${arr[i].type.charAt(0).toUpperCase() + arr[i].type.slice(1)}</h3>`;
     } else if (arr[i].type === 'cat') {
-      domString += `<h3 style="background-color: #02e3c1;">${arr[i].type}</h3>`;
+      domString += `<h3 style="background-color: #02e3c1;">${arr[i].type.charAt(0).toUpperCase() + arr[i].type.slice(1)}</h3>`;
     }
     domString += '</div>';
   }
   printToDom('#pets', domString);
 }
 
-const showCats = (arr) => {
+const showCategories = (arr, animalType) => {
   let domString = '';
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].type === 'cat') {
+    if (arr[i].type === animalType) {
       domString += '<div class="container">';
       domString += `<h2>${arr[i].name}</h2>`;
       domString += '<div class="image-center">';
@@ -249,43 +249,13 @@ const showCats = (arr) => {
       domString += '</div>';
       domString += `<h4>${arr[i].color}</h4>`;
       domString += `<p>${arr[i].specialSkill}</p>`;
-      domString += `<h3 class="cat-type">${arr[i].type}</h3>`;
-      domString += '</div>';
-    } else;
-  }
-  printToDom('#pets', domString);
-}
-
-const showDogs = (arr) => {
-  let domString = '';
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].type === 'dog') {
-      domString += '<div class="container">';
-      domString += `<h2>${arr[i].name}</h2>`;
-      domString += '<div class="image-center">';
-      domString += `<img src="${arr[i].imageUrl}">`;
-      domString += '</div>';
-      domString += `<h4>${arr[i].color}</h4>`;
-      domString += `<p>${arr[i].specialSkill}</p>`;
-      domString += `<h3 class="dog-type">${arr[i].type}</h3>`;
-      domString += '</div>';
-    } else;
-  }
-  printToDom('#pets', domString);
-}
-
-const showDinos = (arr) => {
-  let domString = '';
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].type === 'dino') {
-      domString += '<div class="container">';
-      domString += `<h2>${arr[i].name}</h2>`;
-      domString += '<div class="image-center">';
-      domString += `<img src="${arr[i].imageUrl}">`;
-      domString += '</div>';
-      domString += `<h4>${arr[i].color}</h4>`;
-      domString += `<p>${arr[i].specialSkill}</p>`;
-      domString += `<h3 class="dino-type">${arr[i].type}</h3>`;
+      if (arr[i].type === 'dog') {
+        domString += `<h3 style="background-color: #ff7142;">${arr[i].type.charAt(0).toUpperCase() + arr[i].type.slice(1)}</h3>`;
+      } else if (arr[i].type === 'dino') {
+        domString += `<h3 style="background-color: #c561ff;">${arr[i].type.charAt(0).toUpperCase() + arr[i].type.slice(1)}</h3>`;
+      } else if (arr[i].type === 'cat') {
+        domString += `<h3 style="background-color: #02e3c1;">${arr[i].type.charAt(0).toUpperCase() + arr[i].type.slice(1)}</h3>`;
+      }
       domString += '</div>';
     } else;
   }
