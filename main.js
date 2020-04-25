@@ -200,7 +200,7 @@ const pets = [
     color: "Green",
     specialSkill: "Gives hugs with appropriate pressure and for the right length of time.",
     type: "cat",
-    imageUrl: "http://img.izismile.com/img/img2/20090219/cats_02.jpg"
+    imageUrl: "https://bit.ly/2yGNqAL"
   },
   {
     name: "Lucy",
@@ -210,7 +210,7 @@ const pets = [
     imageUrl: "https://bit.ly/2KvKjyh"
   }
 ];
- 
+
 const printToDom = (selector, textToPrint) => {
   const selectedDiv = document.querySelector(selector);
   selectedDiv.innerHTML = textToPrint;
@@ -226,10 +226,15 @@ const allPets = (arr) => {
     domString += '</div>';
     domString += `<h4>${arr[i].color}</h4>`;
     domString += `<p>${arr[i].specialSkill}</p>`;
-    domString += `<h3 id="type">${arr[i].type}</h3>`;
+    if (arr[i].type === 'dog') {
+      domString += `<h3 style="background-color: #ff7142;">${arr[i].type}</h3>`;
+    } else if (arr[i].type === 'dino') {
+      domString += `<h3 style="background-color: #c561ff;">${arr[i].type}</h3>`;
+    } else if (arr[i].type === 'cat') {
+      domString += `<h3 style="background-color: #02e3c1;">${arr[i].type}</h3>`;
+    }
     domString += '</div>';
   }
-
   printToDom('#pets', domString);
 }
 
@@ -244,11 +249,10 @@ const showCats = (arr) => {
       domString += '</div>';
       domString += `<h4>${arr[i].color}</h4>`;
       domString += `<p>${arr[i].specialSkill}</p>`;
-      domString += `<h3 id="type">${arr[i].type}</h3>`;
+      domString += `<h3 class="cat-type">${arr[i].type}</h3>`;
       domString += '</div>';
     } else;
   }
-
   printToDom('#pets', domString);
 }
 
@@ -263,11 +267,10 @@ const showDogs = (arr) => {
       domString += '</div>';
       domString += `<h4>${arr[i].color}</h4>`;
       domString += `<p>${arr[i].specialSkill}</p>`;
-      domString += `<h3 id="type">${arr[i].type}</h3>`;
+      domString += `<h3 class="dog-type">${arr[i].type}</h3>`;
       domString += '</div>';
     } else;
   }
-
   printToDom('#pets', domString);
 }
 
@@ -282,11 +285,10 @@ const showDinos = (arr) => {
       domString += '</div>';
       domString += `<h4>${arr[i].color}</h4>`;
       domString += `<p>${arr[i].specialSkill}</p>`;
-      domString += `<h3 id="type">${arr[i].type}</h3>`;
+      domString += `<h3 class="dino-type">${arr[i].type}</h3>`;
       domString += '</div>';
     } else;
   }
-
   printToDom('#pets', domString);
 }
 
@@ -295,14 +297,3 @@ const init = () => {
 }
 
 init();
-
-// Still left TODO:
-// Create something to diplay the correct colors for each card depending on their type. I was in the middle of 
-// trying to create a function document.getElementById("").style.color = "#"; for each type to change backgorund colors
-// and then add it to init()
-// Don't forget to look at if the h3 id="type" is necessary in each pet function
-// Fix up the Color, Description, and Type Sections.
-// Create a Button that links back to the startup state and name in "All Pets"
-// Optional: Maybe add the word "filter" to the section to clarify the buttons
-// Fix broken Images
-// See if you can condensed image sizes for load time
