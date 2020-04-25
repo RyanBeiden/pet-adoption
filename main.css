@@ -3,7 +3,7 @@ body {
   margin: 0;
   background-color: #e9e9e9;
   font-family: "Avenir", sans-serif;
-  color: #333;
+  color: #555;
 }
 
 header {
@@ -27,6 +27,23 @@ header span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.nav-all {
+  list-style: none;
+  padding: 10px 20px;
+  margin: 15px;
+  background-color: #b3b3b3;
+  border: solid .5px #939393;
+  border-radius: .4em;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.nav-all:hover {
+  background-color: #939393;
+  cursor: pointer;
 }
 
 .nav-dog {
@@ -84,6 +101,7 @@ header span {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: flex-start;
   margin: 15px 0px;
 }
 
@@ -100,11 +118,26 @@ header span {
   background-color: #d3d3d3;
   margin: 0px 0px 20px 0px;
   padding: 10px 0px;
+  color: #555;
 }
 
 #pets h3 {
   margin: 20px 0px 0px 0px;
   padding: 10px 0px;
+  color: #fff;
+}
+
+#pets h4 {
+  margin: 15px 0px 0px 0px;
+  padding: 0px 0px 5px 0px;
+  font-size: 1.15em;
+  font-weight: 500;
+  color: #333;
+}
+
+#pets p {
+  font-style: italic;
+  margin: 5px 0px;
 }
 
 #pets img {
@@ -117,4 +150,16 @@ header span {
 .image-center {
   display: flex;
   justify-content: center;
+}
+
+.cat-type {
+  background-color: #02e3c1;
+}
+
+.dog-type {
+  background-color: #ff7142;
+}
+
+.dino-type {
+  background-color: #c561ff;
 }
