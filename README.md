@@ -1,7 +1,15 @@
 # Pet Adoption
 
-This Repo shows JavaScript and DOM creating HTML elements from a given array of Objects.
+In this project, you will see how there are buttons to filter out the types of pets that display on the screen. Each pet card has a different color depending on the pet's type.
 
-You will see how there are buttons to filter out the types of pets that display on the screen. This was done through creating a function that will only run if the object in the array has a certain property in a certain key.
+## Preview
 
 ![Pet Adoption Demo](pet-adoption-demo.gif)
+
+## View Project
+- Clone the repository 👉🏼 `$ git clone https://github.com/RyanBeiden/pet-adoption.git`
+
+- Run any http server `$ hs` or code editor to view project 👀
+
+## Technologies Used
+[![JavaScript](https://img.shields.io/badge/-JavaScript-2c9fcc?style=flat-square)](#) [![HTML](https://img.shields.io/badge/-HTML-2c9fcc?style=flat-square)](#) [![CSS](https://img.shields.io/badge/-CSS-2c9fcc?style=flat-square)](#) [![DOM](https://img.shields.io/badge/-DOM-2c9fcc?style=flat-square)](#)
